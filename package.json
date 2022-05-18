@@ -1,0 +1,21 @@
+{
+  "name": "datamap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.17.12",
+    "@swc/jest": "^0.2.21",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.34",
+    "jest": "^28.1.0",
+    "prisma": "^3.14.0",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
