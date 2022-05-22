@@ -11,6 +11,8 @@ const deleteTaskUseCase = new DeleteTaskUseCase({
 
 describe('testing delete use case'  , ()=> {
   it('should verify if the id is provided, return error' , async ()=> {
-    
+    await expect(deleteTaskUseCase.execute({
+      id:''
+    })).rejects.toThrow()
   })
 })
