@@ -1,7 +1,9 @@
-import { TasksData, TasksRepository } from "../tasks-repository";
+import { TasksData, TasksRepository  } from "../tasks-repository";
 import { prisma} from "../../prisma";
 
-export class PrismaTasksRepository implements TasksRepository{
+
+
+export class PrismaTasksRepository implements TasksRepository{ 
   async create({
     title,
     description,
@@ -16,4 +18,12 @@ export class PrismaTasksRepository implements TasksRepository{
     })
 
   }
+
+  async delete(id:string){
+    await prisma.tasks.delete({
+      where:{
+        id
+      }
+    })
+  } 
 }
