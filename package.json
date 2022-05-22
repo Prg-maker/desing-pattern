@@ -17,5 +17,8 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.14.0"
   }
 }
